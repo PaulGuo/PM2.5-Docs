@@ -49,13 +49,46 @@
 
 .. image:: images/hosts.png
 
-镜像桶
-------
+错误日志
+--------
+
+如果你看到某个进程中包含错误信息，可以点击该进程，此时会展开当前进程的详细报错信息，方便你对代码中的问题进行定位。
+
+.. image:: images/host_exceptions.png
 
 监控报警
 --------
 
+.. image:: images/trigger_create_button.png
+
+如果你希望在服务器进程发生如重启、退出、启动等状态时获得通知，可以通过新建监控报警配置来实现，监控报警配置目前支持的事件有：
+
+.. code-block:: bash
+   :emphasize-lines: 0
+
+    event:restart
+    event:delete
+    event:stop
+    event:restart overlimit
+    event:exit
+    event:start
+    event:online
+
+监控报警的一个配置示例如下：
+
+.. image:: images/trigger_create_example.png
+
+创建完成后监控配置列表如下：
+
+.. image:: images/triggers.png
+
+截止目前，监控报警配置已经完成，接下来需要做的只是下载iOS客户端登录你的账号，并确保开启了iOS的系统通知，此后在服务发生特定事件的时候，你的iOS客户端或者Apple Watch便可以实时收到消息通知提醒了。
+
 iOS客户端
 ---------
 
+AppStore下载链接：http://appsto.re/cn/aRVG7.i
+
+.. image:: images/ios_app.png
+.. image:: images/apple_watch_app.png
 
