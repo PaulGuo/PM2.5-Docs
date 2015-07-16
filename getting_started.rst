@@ -6,15 +6,56 @@
 快速上手
 ========
 
-Contents:
+创建账号
+--------
 
-.. code-block:: python
-   :emphasize-lines: 3,5
+访问PM25.io，如果此前未注册过账户，可以输入邮箱名称和密码，点击“登录/注册”按钮即可快速创建一个PM2.5监控平台的账号。
 
-   def some_function():
-       interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'
+.. image:: images/login.png
+
+创建新桶
+--------
+
+登录成功后，点击界面中的“立即创建一个新桶”即可快速创建一个新的“桶”，桶的概念类似分组，旨在将多台不同组别服务器的监控通过“桶”进行聚集并加以区分。
+
+.. image:: images/bucket_create_button.png
+
+创建新桶的界面中有两个必填字段：“新桶名称”和“新桶描述”，点击创建即可创建成功，并获得对应的公钥和私钥。
+
+.. image:: images/bucket_create.png
+
+如果此前你的团队成员已经创建了一个桶，并且对方希望你可以查看该桶内服务器的指标和监控，你可以勾选“显示高级选项”，并向对方索取私钥和公钥填写到高级表单项中，这一步操作类似桶的镜像克隆。
+
+.. image:: images/bucket_create_mirror.png
+
+无论你是通过哪种方式创建的桶，都可以看到类似如下界面，界面中可以看到公钥以及一串命令，这串命令的具体用途可以参考“如何安装”章节中的“接入指南”：
+
+.. image:: images/buckets.png
+
+部署接入
+--------
+
+.. code-block:: bash
+   :emphasize-lines: 0
+
+    npm install -g pm25
+    pm25 interact <secret_key> <public_key>
+    pm25 start processes.json
+
+数据查看
+--------
+
+当上述命令操作完成后，便可以在PM2.5中查看到服务的实时数据了，点击对应的桶，即可进入到服务指标的可视化展示界面：
+
+.. image:: images/hosts.png
+
+镜像桶
+------
+
+监控报警
+--------
+
+iOS客户端
+---------
 
 
