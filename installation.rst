@@ -8,6 +8,8 @@ PM2.5 CLI基于PM2，使用方法和API同PM2完全一致，如果你目前正�
 如何安装
 ========
 
+NPM安装包地址：https://www.npmjs.com/package/pm25
+
 .. code-block:: bash
    :emphasize-lines: 0
 
