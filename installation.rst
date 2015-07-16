@@ -118,28 +118,28 @@ NPM安装包地址：https://www.npmjs.com/package/pm25
     Basic Examples:
 
         Start an app using all CPUs available + set a name :
-        $ pm2 start app.js -i max --name "api"
+        $ pm25 start app.js -i max --name "api"
 
         Restart the previous app launched, by name :
-        $ pm2 restart api
+        $ pm25 restart api
 
         Stop the app :
-        $ pm2 stop api
+        $ pm25 stop api
 
         Restart the app that is stopped :
-        $ pm2 restart api
+        $ pm25 restart api
 
         Remove the app from the process list :
-        $ pm2 delete api
+        $ pm25 delete api
 
         Kill daemon pm2 :
-        $ pm2 kill
+        $ pm25 kill
 
         Update pm2 :
-        $ npm install pm2@latest -g ; pm2 updatePM2
+        $ npm install pm25@latest -g ; pm25 updatePM2
 
-        More examples in https://github.com/Unitech/pm2#usagefeatures
+        More examples in https://github.com/PaulGuo/PM2.5#usagefeatures
 
     Deployment help:
 
-        $ pm2 deploy help
+        $ pm25 deploy help
